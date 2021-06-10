@@ -9,6 +9,9 @@ package principle.liskov;
  */
 public abstract class AbstractGun {
     public abstract void shoot();
+    void volume() {
+        System.out.println("开枪声音，嘣嘣嘣");
+    }
 }
 
 

@@ -17,4 +17,8 @@ public class Solider {
         System.out.println("士兵开始击杀敌人。。。");
         abstractGun.shoot();
     }
+
+    public void volume() {
+        abstractGun.volume();
+    }
 }

@@ -22,10 +22,24 @@ public class Liskov {
          */
         /*Solider sanMao = new Solider();
         sanMao.setGun(new HandGun());
-        sanMao.killEnemy();*/ // 这个就已经违反了业务逻辑，士兵杀人但是子弹，只能等着被人杀
+        sanMao.killEnemy();*/
 
-        Solider sanMao = new Solider();
-        sanMao.setGun(new ToyGun());
-        sanMao.killEnemy();
+        // （1）以下这个就已经违反了业务逻辑，士兵杀人但是没有子弹，只能等着被人杀
+/*        Solider sanMao = new Solider();
+        sanMao.setGun(new ToyGun1());
+        sanMao.killEnemy();*/
+
+        Solider sanMao2 = new Solider();
+        ToyGun toyGun = new ToyGun();
+        toyGun.setAbstractGun(new HandGun());
+        sanMao2.setGun(toyGun.getAbstractGun());
+        sanMao2.volume();
     }
 }
+/**
+ * (1)中解决方法可以是
+ * 1.在 在Soldier类中增加instanceof的判断，如果是玩具枪，就不用来杀敌人。但是，在程序中，每增加一个类，
+ * 所有与这个父类有关系的类都必须修改，你觉得可行吗？如果你的产品出现了这个问题，因为修正了这样一个Bug，就要求所有与这个父类有关系的类都增加一个判断，客户非跳起来跟你干架不可。否决掉了，不可行
+ * 2.ToyGun脱离继承，建立一个独立的父类，为了实现代码复用，可以与AbastractGun建立关联委托关系
+ *
+ */
