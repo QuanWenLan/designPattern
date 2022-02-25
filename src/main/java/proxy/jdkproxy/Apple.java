@@ -12,4 +12,10 @@ public class Apple implements Fruit {
         System.out.println("apple show, i am a apple <<< invoked ");
         return 1;
     }
+
+    @Override
+    public int sale() {
+        System.out.println("卖水果了。。。");
+        return 0;
+    }
 }

@@ -8,4 +8,6 @@ package proxy.jdkproxy;
  */
 public interface Fruit {
     int show();
+
+    int sale();
 }
