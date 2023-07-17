@@ -11,5 +11,11 @@ public class HandGun extends AbstractGun{
     @Override
     public void shoot() {
         System.out.println("手枪射击。。。");
+        volume();
+    }
+
+    @Override
+    void volume() {
+        System.out.println("手枪声音。。。");
     }
 }

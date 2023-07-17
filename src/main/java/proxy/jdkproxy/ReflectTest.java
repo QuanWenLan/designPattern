@@ -13,5 +13,6 @@ public class ReflectTest {
         //注意一定要返回接口，不能返回实现类否则会报错
         Fruit fruit = (Fruit) DynamicAgent.getAgent(Fruit.class, new Apple());
         fruit.show();
+        fruit.sale();
     }
 }

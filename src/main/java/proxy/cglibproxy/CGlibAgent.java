@@ -27,6 +27,15 @@ public class CGlibAgent implements MethodInterceptor {
         return enhancer.create();
     }
 
+    /**
+     *
+     * @param o 代理的对象（增强对象）
+     * @param method 被拦截的方法（需要增强的方法）
+     * @param objects 方法入参
+     * @param methodProxy 用于调用原始方法
+     * @return
+     * @throws Throwable
+     */
     @Override
     public Object intercept(Object o, Method method, Object[] objects, MethodProxy methodProxy) throws Throwable {
         System.out.println(">>>>before invoking");

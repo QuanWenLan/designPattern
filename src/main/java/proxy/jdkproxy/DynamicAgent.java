@@ -33,6 +33,8 @@ public class DynamicAgent {
 
     // 2 再获取一个代理对象，传入要代理的类，返回一个代理类，代理类实现对真实类的操作接口（第一步）
     public static Object getAgent(Class interfaceClazz, Object proxy) {
+//        自动生成 $Proxy0.class 源代码
+        System.setProperty("sun.misc.ProxyGenerator.saveGeneratedFiles", "true");
         return Proxy.newProxyInstance(interfaceClazz.getClassLoader(), new Class[]{interfaceClazz},
                 new MyHandler(proxy));
     }
