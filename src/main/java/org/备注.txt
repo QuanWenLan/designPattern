@@ -1,0 +1,2 @@
+代理的几种方式
+代码测试见：org.itstack.interview.test.ApiTest
