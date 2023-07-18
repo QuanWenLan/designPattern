@@ -1,4 +1,4 @@
-package big_talk_pattern.factory;
+package big_talk_pattern.simplefactory;
 
 /**
  * @ClassName Shape

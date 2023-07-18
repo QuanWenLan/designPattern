@@ -1,0 +1,8 @@
+动态地给一个对象添加一些额外的职责，就增加功能来说，装饰模式比生成子类更灵活。
+
+类图的解释：
+Component 是定义一个对象接口，可以给这些对象动态地添加职责。
+ConcreteComponent 是定义了一个具体的对象，也可以给这个对象添加一些职责。
+Decorator 装饰抽象类，继承了 Component，从外类来扩展 Component 类的功能，
+但对于 Component 来说，是无需知道 Decorator 的存在的。
+ConcreteDecorator 就是具体的装饰对象，起到给 Component 添加职责的功能。
