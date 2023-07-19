@@ -5,6 +5,9 @@ import org.objectweb.asm.commons.AdviceAdapter;
 
 import static org.objectweb.asm.Opcodes.ASM5;
 
+/**
+ * <a href="https://blog.csdn.net/wanxiaoderen/article/details/107043218">...</a>
+ */
 public class ASMProxy extends ClassLoader {
 
     public static <T> T getProxy(Class clazz) throws Exception {

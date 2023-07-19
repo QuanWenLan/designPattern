@@ -18,6 +18,7 @@
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
         <org.springframework.version>5.2.4.RELEASE</org.springframework.version>
+        <asm.version>9.4</asm.version>
     </properties>
 
     <dependencies>
@@ -169,6 +170,53 @@
                     <groupId>org.slf4j</groupId>
                 </exclusion>
             </exclusions>
+        </dependency>
+
+        <dependency>
+            <artifactId>asm</artifactId>
+            <groupId>org.ow2.asm</groupId>
+            <version>${asm.version}</version>
+        </dependency>
+        <dependency>
+            <artifactId>asm-tree</artifactId>
+            <groupId>org.ow2.asm</groupId>
+            <version>${asm.version}</version>
+        </dependency>
+
+        <dependency>
+            <artifactId>asm-analysis</artifactId>
+            <groupId>org.ow2.asm</groupId>
+            <version>${asm.version}</version>
+        </dependency>
+
+        <dependency>
+            <artifactId>asm-commons</artifactId>
+            <groupId>org.ow2.asm</groupId>
+            <version>${asm.version}</version>
+        </dependency>
+
+        <dependency>
+            <artifactId>asm-util</artifactId>
+            <groupId>org.ow2.asm</groupId>
+            <version>${asm.version}</version>
+        </dependency>
+
+        <!--<dependency>
+            <artifactId>asm-xml</artifactId>
+            <groupId>org.ow2.asm</groupId>
+            <version>${asm.version}</version>
+        </dependency>-->
+
+        <dependency>
+            <artifactId>asm-commons</artifactId>
+            <groupId>org.ow2.asm</groupId>
+            <version>${asm.version}</version>
+        </dependency>
+
+        <dependency>
+            <artifactId>asm-util</artifactId>
+            <groupId>org.ow2.asm</groupId>
+            <version>${asm.version}</version>
         </dependency>
     </dependencies>
 

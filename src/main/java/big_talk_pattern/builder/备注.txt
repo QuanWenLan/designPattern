@@ -23,3 +23,5 @@ Appendable 定义了多个 append 抽象方法，即 Appendable 为抽象建造�
 具体建造者：AbstractStringBuilder 实现了 Appendable 的方法，不能实例化而已，是抽象类。
 指挥如何建造的指挥者 和 具体建造者：StringBuilder，建造方法的实现是由 AbstractStringBuilder 完成，
 而StringBuilder 继承了 AbstractStringBuilder。
+
+##### 创建型模式

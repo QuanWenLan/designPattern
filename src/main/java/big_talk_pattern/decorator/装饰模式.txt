@@ -6,3 +6,6 @@ ConcreteComponent 是定义了一个具体的对象，也可以给这个对象�
 Decorator 装饰抽象类，继承了 Component，从外类来扩展 Component 类的功能，
 但对于 Component 来说，是无需知道 Decorator 的存在的。
 ConcreteDecorator 就是具体的装饰对象，起到给 Component 添加职责的功能。
+
+
+##### 结构型模式
