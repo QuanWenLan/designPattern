@@ -7,4 +7,7 @@ package big_talk_pattern.factory;
  * @date: 2022-11-30 21:55
  */
 public class Undergraduate extends LeiFeng {
+    public Undergraduate() {
+        System.out.println("大学生学雷锋");
+    }
 }

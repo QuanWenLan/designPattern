@@ -16,9 +16,13 @@ public class TestSingleton {
         // 2 第二种
         Singleton2 singleton2 = Singleton2.INSTANCE;
         System.out.println("singleton2 = " + singleton2);
+        singleton2.setName("小明");
+        singleton2.setValue(20);
+        singleton2.setStudent(new Singleton2.Student("小红"));
+        singleton2.doSomething();
 
         // 懒汉式测试 singleton4
-        test4();
+//        test4();
     }
 
      static void test4() {

@@ -1,6 +1,6 @@
-package buliderPattern.section3;
+package big_talk_pattern.buliderPattern.section3;
 
-import buliderPattern.Director;
+import big_talk_pattern.buliderPattern.Director;
 
 /**
  * @author Vin lan

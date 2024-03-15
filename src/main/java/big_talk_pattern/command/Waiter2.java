@@ -30,8 +30,7 @@ public class Waiter2 {
     }
 
     public void deliverCommand() {
-        for (BakeCommand command:commandList
-             ) {
+        for (BakeCommand command:commandList) {
             command.handCommand();
         }
     }

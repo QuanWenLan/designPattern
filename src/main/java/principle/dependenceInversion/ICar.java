@@ -4,7 +4,8 @@ public interface ICar {
     // 是车就应该能跑
     void run();
 }
-class BMW implements ICar{
+
+class BMW implements ICar {
 
     @Override
     public void run() {
@@ -12,7 +13,7 @@ class BMW implements ICar{
     }
 }
 
-class BENZ implements ICar{
+class BENZ implements ICar {
 
     @Override
     public void run() {

@@ -1,4 +1,4 @@
-package buliderPattern;
+package big_talk_pattern.buliderPattern;
 
 /**
  * @author Vin lan

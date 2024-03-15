@@ -7,4 +7,7 @@ package big_talk_pattern.factory;
  * @date: 2022-11-30 21:56
  */
 public class Volunteer extends LeiFeng {
+    public Volunteer() {
+        System.out.println("志愿者学雷锋");
+    }
 }

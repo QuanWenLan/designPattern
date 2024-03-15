@@ -1,9 +1,9 @@
-package buliderPattern.section2;
+package big_talk_pattern.buliderPattern.section2;
 
-import buliderPattern.BMWBuilder;
-import buliderPattern.BMWModel;
-import buliderPattern.BenzBuilder;
-import buliderPattern.BenzModel;
+import big_talk_pattern.buliderPattern.BMWBuilder;
+import big_talk_pattern.buliderPattern.BenzBuilder;
+import big_talk_pattern.buliderPattern.BMWModel;
+import big_talk_pattern.buliderPattern.BenzModel;
 
 import java.util.ArrayList;
 

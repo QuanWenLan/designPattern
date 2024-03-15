@@ -5,12 +5,14 @@ public interface IDriver {
     void driver(ICar car);  // 接口申明依赖方式 ，接口注入
 }
 
-class Driver implements IDriver{
+class Driver implements IDriver {
 
     private ICar iCar;
-    public Driver(){}
 
-    public Driver(ICar car){
+    public Driver() {
+    }
+
+    public Driver(ICar car) {
         this.iCar = car;  // 构造注入
     }
 
